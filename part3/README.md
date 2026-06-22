@@ -15,19 +15,22 @@ sudo make test
 
 ## Evidence of deployment
 
-**1. make deploy — Construction and startup of the 8 containers:**
+**1. make deploy  Construction and startup of the 8 containers:**
 ![alt text](image-1.png)
 
 **2. make test — Verification that the lab is active:**
+
 ![alt text](image-2.png)
 
 **3. docker ps — All 8 containers running:**
+
 ![alt text](image-3.png)
 
 **4. ip addr — br_public and br_corporate network interfaces:**
 ![alt text](image-4.png)
 
 **5. docker exec — Access to machine p-web-01:**
+
 ![alt text](image-5.png)
 
 ## Laboratory architecture
@@ -41,17 +44,17 @@ With `ip addr | grep "br_"` I confirmed the two network interfaces:
 - `br_public` → 172.16.10.1/24
 - `br_corporate` → 10.1.0.1/24
 
-| Machine      | Public IP    |Corporate IP|  Hostname                             |
-|----------------------------------------------------------------------------------|
-| Kali host    | 172.16.10.1  | 10.1.0.1   | —                                     |
-| p-web-01     | 172.16.10.10 | —          | p-web-01.acme-infinity-servers.com    |
-| p-ftp-01     | 172.16.10.11 | —          | p-ftp-01.acme-infinity-servers.com    |
-| p-web-02     | 172.16.10.12 | 10.1.0.11  | p-web-02.acme-infinity-servers.com    |
-| p-jumpbox-01 | 172.16.10.13 | 10.1.0.12  | p-jumpbox-01.acme-infinity-servers.com|
-| c-backup-01  | —            | 10.1.0.13  | c-backup-01.acme-infinity-servers.com |
-| c-redis-01   | —            | 10.1.0.14  | c-redis-01.acme-infinity-servers.com  |
-| c-db-01      | —            | 10.1.0.15  | c-db-01.acme-infinity-servers.com     |
-| c-db-02      | —            | 10.1.0.16  | c-db-02.acme-infinity-servers.com     |
+| Máquina      | IP Pública   | IP Corporativa | Hostname                               |
+|--------------|--------------|----------------|----------------------------------------|
+| Kali host    | 172.16.10.1  | 10.1.0.1       | —                                      |
+| p-web-01     | 172.16.10.10 | —              | p-web-01.acme-infinity-servers.com     |
+| p-ftp-01     | 172.16.10.11 | —              | p-ftp-01.acme-infinity-servers.com     |
+| p-web-02     | 172.16.10.12 | 10.1.0.11      | p-web-02.acme-infinity-servers.com     |
+| p-jumpbox-01 | 172.16.10.13 | 10.1.0.12      | p-jumpbox-01.acme-infinity-servers.com |
+| c-backup-01  | —            | 10.1.0.13      | c-backup-01.acme-infinity-servers.com  |
+| c-redis-01   | —            | 10.1.0.14      | c-redis-01.acme-infinity-servers.com   |
+| c-db-01      | —            | 10.1.0.15      | c-db-01.acme-infinity-servers.com      |
+| c-db-02      | —            | 10.1.0.16      | c-db-02.acme-infinity-servers.com      |
 
 ### 3.B — Hacking Technique
 
