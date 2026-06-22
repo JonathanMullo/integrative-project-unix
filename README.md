@@ -2,8 +2,8 @@
 
 ## Members
 - Luis Villarreal — Part 2 (64-bit Kernel)
-- Jonathan Mullo — Part 1 (Custom Distro)
-- Byron Buitron — Part 3 (Black Hat Bash Lab)
+- Byron Buitron — Part 1 (Custom Distro)
+- Jonathan Mullo — Part 3 (Black Hat Bash Lab)
 
 ## Parts
 - [Part 1](part1/) — Custom Linux distro with Cubic
